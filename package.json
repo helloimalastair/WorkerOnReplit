@@ -1,0 +1,22 @@
+{
+  "name": "worker-template-on-replit",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A template for kick starting a Cloudflare Workers project",
+  "main": "out/worker.js",
+  "scripts": {
+    "format": "prettier --write '**/*.{js,css,json,md}'",
+    "build": "esbuild src/index.js --bundle --minify --outfile=out/worker.js",
+    "build:big": "esbuild src/index.js --bundle --minify --outfile=out/worker.js",
+    "test:mini": "miniflare out/worker.js",
+    "test": "yarn build && yarn test:mini",
+    "clean": "rimraf out node_modules"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.13.2",
+    "miniflare": "^1.4.1",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.2"
+  }
+}

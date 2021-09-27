@@ -1,0 +1,2 @@
+language = "nix"
+run = "yarn install && yarn format && yarn test"
