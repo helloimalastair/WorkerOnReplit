@@ -7,7 +7,7 @@
   "scripts": {
     "format": "prettier --write '**/*.{js,css,json,md}'",
     "build": "esbuild src/index.js --bundle --minify --outfile=out/worker.js",
-    "build:big": "esbuild src/index.js --bundle --minify --outfile=out/worker.js",
+    "build:big": "esbuild src/index.js --bundle --outfile=out/worker.js",
     "test:mini": "miniflare out/worker.js",
     "test": "yarn build && yarn test:mini",
     "clean": "rimraf out node_modules"
