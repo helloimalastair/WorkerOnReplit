@@ -37,6 +37,8 @@ npx typescript --init
 3. Uncomment the following attibute named moduleResolution.
 4. Uncomment the attribute CheckJS so that it enables ts to type check for your js files.
 
+- Now you can just rename your js file to ts.
+
 - Check for the modules that you imported whether it supports both natively, if not them install it using @types.
 For example if express has no definations and is a seperate module for TS, then you can install it following this snippet.
 ```
@@ -48,6 +50,7 @@ npx -i -D typescript @types/node @types/express
 2. For build command use this: tsc -p tsconfig.json
 3. By now it should working if you run the following commands.
 
+- Make sure in your js file you change your variable type to 'Any'.
 - Now you can just refactor the code according to make it to TS.
 
 - Also now you can create a dev command and include this : ts-node src/index.js
