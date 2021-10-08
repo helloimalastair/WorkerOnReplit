@@ -26,7 +26,7 @@ Automatically builds your script, then uses [Miniflare]("https://miniflare.dev")
 ## clean
 Removes the built script and `node_modules`, to allow you to build from scratch.
 
-## Convert JS to TS
+## Convert JS to TS With Type Checking
 - First run the following command in your console.
 ```
 npx typescript --init
