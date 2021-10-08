@@ -52,5 +52,5 @@ npx -i -D typescript @types/node @types/express
 
 - Also now you can create a dev command and include this : ts-node src/index.js
 
-- If you are facing problems and not able to execute these steps. Click on this [Link]("https://www.youtube.com/watch?v=qFMMOJucqTw")
+- If you are facing problems and not able to execute these steps. Click on this [Link](https://www.youtube.com/watch?v=qFMMOJucqTw).
 
