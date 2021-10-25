@@ -42,18 +42,12 @@ npx typescript --init
 - Check for the modules that you imported whether it supports both natively, if not them install it using @types.
 For example if express has no definations and is a seperate module for TS, then you can install it following this snippet.
 ```
-npx -i -D typescript @types/node @types/express
+npx -i -D typescript -D @cloudflare/workers-types
 ```
 
-- Update the scripts in packages.json with following changes -
-1. It is optional to include start , so for start command use this: node dist/index.js
-2. For build command use this: tsc -p tsconfig.json
-3. By now it should working if you run the following commands.
+Update the scripts in packages.json by adding `tsc && ` to the front of all commands.
 
 - Make sure in your js file you change your variable type to 'Any'.
 - Now you can just refactor the code according to make it to TS.
 
-- Also now you can create a dev command and include this : ts-node src/index.js
-
 - If you are facing problems and not able to execute these steps. Click on this [Link](https://www.youtube.com/watch?v=qFMMOJucqTw).
-
