@@ -42,7 +42,7 @@ npx typescript --init
 - Check for the modules that you imported whether it supports both natively, if not them install it using @types.
 For example if express has no definations and is a seperate module for TS, then you can install it following this snippet.
 ```
-npx -i -D typescript -D @cloudflare/workers-types
+npx -i -D typescript @cloudflare/workers-types
 ```
 
 Update the scripts in packages.json by adding `tsc && ` to the front of all commands.
